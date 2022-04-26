@@ -12,12 +12,12 @@ variable "m_private_subnet_cidr_blocks" {
 
 variable "m_public_subnet_cidr_blocks" {
   type        = list(any)
-  default     = ["10.0.2.0/24", "10.0.4.0/24"]
+  default     = [""]
   description = "list of CIDR for Public subnets."
 }
 
 variable "m_availability_zones" {
-  default     = ["ap-south-1a", "ap-south-1b"]
+  default     = ["ap-south-1a"]
   type        = list(any)
   description = "List of availability zones"
 }
