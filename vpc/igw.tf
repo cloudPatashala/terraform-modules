@@ -1,3 +1,5 @@
+# Creating AWS Resrouce internet gateway. 
+
 resource "aws_internet_gateway" "default" {
   vpc_id = aws_vpc.main_vpc.id
 
