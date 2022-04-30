@@ -1,3 +1,4 @@
+# Creating Subnets. 
 resource "aws_subnet" "private_subnet" {
   count = length(var.m_private_subnet_cidr_blocks)
 
@@ -10,7 +11,7 @@ resource "aws_subnet" "private_subnet" {
   }
 }
 
-
+# Creating Subnet2
 resource "aws_subnet" "public_subnet" {
   count = length(var.m_public_subnet_cidr_blocks)
 
